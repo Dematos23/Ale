@@ -12,7 +12,7 @@ body{
 main{
     background-color: rgba(0,0,0,0);
     animation-name: carga;
-    animation-duration: 3ms;
+    animation-duration: 3s;
 }
 
 .contenedor{
@@ -29,10 +29,10 @@ main{
 
 .caja{
     animation-name: entrada;
-    animation-duration: 2ms;
+    animation-duration: 2s;
     animation-timing-function: ease;
     animation-fill-mode: backwards;
-    animation-delay: 3ms;    
+    animation-delay: 3s;    
     background-size: cover;
 }
 
