@@ -9,6 +9,12 @@ body{
     background: radial-gradient(circle, rgba(247,186,168,0.5) 0%, rgba(93,193,185,0.5) 50%, rgba(247,186,168,0.5) 100%);
 }
 
+main{
+    background-color: rgba(0,0,0,0);
+    animation-name: carga;
+    animation-duration: 3s;
+}
+
 .contenedor{
     padding: 50px;
     min-width: 700px;
@@ -23,10 +29,10 @@ body{
 
 .caja{
     animation-name: entrada;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease;
     animation-fill-mode: backwards;
-    animation-delay: 100ms;    
+    animation-delay: 3s;    
     background-size: cover;
 }
 
@@ -123,11 +129,22 @@ body{
 @keyframes entrada{
     0%{
         transform: scale(0);
+
     }
     70%{
         transform: scale(1.05);
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@keyframes carga{
+    0%{
+        background-color: #000;
+        
+    }
+    100%{
+        background-color: rgba(0,0,0,0);
     }
 }
